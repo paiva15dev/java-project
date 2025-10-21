@@ -1,0 +1,12 @@
+C:\Users\paiva\OneDrive\Documents\GitHub\java-project\src\main\java\com\ecommerce\dto\RegisterRequest.java
+C:\Users\paiva\OneDrive\Documents\GitHub\java-project\src\main\java\com\ecommerce\dto\LoginRequest.java
+C:\Users\paiva\OneDrive\Documents\GitHub\java-project\src\main\java\com\ecommerce\security\SecurityConfig.java
+C:\Users\paiva\OneDrive\Documents\GitHub\java-project\src\main\java\com\ecommerce\controller\AuthController.java
+C:\Users\paiva\OneDrive\Documents\GitHub\java-project\src\main\java\com\ecommerce\service\UserService.java
+C:\Users\paiva\OneDrive\Documents\GitHub\java-project\src\main\java\com\ecommerce\dto\JwtResponse.java
+C:\Users\paiva\OneDrive\Documents\GitHub\java-project\src\main\java\com\ecommerce\security\JwtAuthenticationFilter.java
+C:\Users\paiva\OneDrive\Documents\GitHub\java-project\src\main\java\com\ecommerce\model\User.java
+C:\Users\paiva\OneDrive\Documents\GitHub\java-project\src\main\java\com\ecommerce\ProjetoApplication.java
+C:\Users\paiva\OneDrive\Documents\GitHub\java-project\src\main\java\com\ecommerce\security\JwtUtil.java
+C:\Users\paiva\OneDrive\Documents\GitHub\java-project\src\main\java\com\ecommerce\repository\UserRepository.java
+C:\Users\paiva\OneDrive\Documents\GitHub\java-project\src\main\java\com\ecommerce\security\CustomUserDetailsService.java

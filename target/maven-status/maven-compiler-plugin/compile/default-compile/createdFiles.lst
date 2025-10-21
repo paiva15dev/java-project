@@ -1,0 +1,13 @@
+com\ecommerce\security\JwtUtil.class
+com\ecommerce\model\User$UserBuilder.class
+com\ecommerce\dto\JwtResponse.class
+com\ecommerce\dto\LoginRequest.class
+com\ecommerce\repository\UserRepository.class
+com\ecommerce\dto\RegisterRequest.class
+com\ecommerce\model\User.class
+com\ecommerce\security\JwtAuthenticationFilter.class
+com\ecommerce\service\UserService.class
+com\ecommerce\controller\AuthController.class
+com\ecommerce\security\SecurityConfig.class
+com\ecommerce\ProjetoApplication.class
+com\ecommerce\security\CustomUserDetailsService.class

@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: mysql-ecom
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: ecom
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysqldata:/var/lib/mysql
+    networks:
+      - ecommerce-net
+
+  app:
+    build:
+      context: ..        # 👈 vai até a raiz (onde está o pom.xml e target/)
+      dockerfile: docker/Dockerfile  # 👈 caminho do Dockerfile
+    container_name: ecommerce-app
+    restart: always
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/ecom?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      APP_JWT_SECRET: MINHA_CHAVE_SECRETA_SUPER_SEGURA_123456789
+      APP_JWT_EXPIRATION: 3600000
+    ports:
+      - "8080:8080"
+    networks:
+      - ecommerce-net
+
+volumes:
+  mysqldata:
+
+networks:
+  ecommerce-net:
+    driver: bridge
